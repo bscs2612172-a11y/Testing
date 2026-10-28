@@ -1,0 +1,70 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.abba{
+    height: 300px;
+    width: 600px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 50px;
+    
+}
+
+.left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid;
+    width: 100px;
+    height: 100%;
+    align-items: center;
+}
+
+.right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 100%;
+    align-items: center;
+}
+input{
+    margin-top: 10px;
+}
+.upper{
+    margin-top: 100px;
+}
+button{
+    margin-top: 10px;
+}
+.fa-xmark{
+    margin-left: 270px;
+    margin-top: 10px;
+}
+p{
+    margin-right: 200px;
+}
+#close
+{
+    display: none;
+}
+body:has(#close:checked) .abba{
+    display: none;
+}
+body:has(#close:checked) #close{
+    display: block;
+}
